@@ -1,0 +1,4710 @@
+{
+  "model": "smartdoor",
+  "SUT version": "fault-free",
+  "strategy": "Conexa",
+  "scenario": "SECLOC-07",
+  "solver": "Z3",
+  "seed": 264581633741521285472363775261500014631,
+  "max_test_cases": 3,
+  "max_steps_per_test_case": 100,
+  "test_run_id": "SmartDoor Conexa SECLOC-07 run 8",
+  "test_cases": [
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 979
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1324
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "shut_off",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2446
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16907
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12456
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28223
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12212
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7629
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24388
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2331
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26928
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24337
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14097
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15260
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28871
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 11819
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2804
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 20533
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25983
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 27569
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31249
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12700
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 6811
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 119
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16334
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15046
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26530
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 11667
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 976
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1768
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30807
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23640
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 10747
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16759
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7361
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28254
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 8821
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30248
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 6436
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3447
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14755
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24816
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30214
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31674
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26665
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15875
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 20522
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 257
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 10000
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 8
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 257
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 8482
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3442
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7533
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "shut_off",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 17025
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2245
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12489
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1940
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1897
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32660
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26979
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3698
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25643
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16526
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 19502
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 21884
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26952
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 21637
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 29517
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28965
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24193
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16267
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30752
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14619
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 21207
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 4335
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 840
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 22610
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 11402
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 29508
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23719
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23801
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14621
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15449
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31581
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 18561
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15695
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32065
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 5579
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 8092
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1314
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 4684
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12691
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31291
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 29654
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 13067
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 13205
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 5006
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 5102
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 591
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28659
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3047
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 29211
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1774
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3047
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 27529
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24226
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3019
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 33706
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3019
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7125
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7125
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23807
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2990
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14899
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2990
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1581
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 34630
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1582
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23777
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 421
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "shut_off",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 17821
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 354
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 10904
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 642
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16712
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31607
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 14257
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12521
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31059
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31407
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 5578
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23367
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16799
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31847
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 22738
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 17270
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25153
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 11776
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 9333
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 17232
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1835
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 10594
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28709
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 17611
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1129
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16036
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 22211
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 15113
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    }
+  ]
+}

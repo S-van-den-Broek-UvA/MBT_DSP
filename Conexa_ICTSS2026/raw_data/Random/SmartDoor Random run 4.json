@@ -1,0 +1,4870 @@
+{
+  "model": "smartdoor",
+  "SUT version": "fault-free",
+  "strategy": "Random",
+  "scenario": null,
+  "solver": "Z3",
+  "seed": 86529860898576281633558054428616765697,
+  "max_test_cases": 3,
+  "max_steps_per_test_case": 100,
+  "test_run_id": "SmartDoor Random run 4",
+  "test_cases": [
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 10000
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "opened",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-01 #black",
+            "The door can be opened #green"
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be unlocked while opened #red"
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "closed",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-02 #black",
+            "The door can be closed #green"
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "opened",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-01 #black",
+            "The door can be opened #green"
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 281
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked while opened #red"
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26285
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked while opened #red"
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened again while opened #red"
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 31891
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be unlocked while opened #red"
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "closed",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-02 #black",
+            "The door can be closed #green"
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1323
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be unlocked while closed #red"
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "opened",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-01 #black",
+            "The door can be opened #green"
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "closed",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-02 #black",
+            "The door can be closed #green"
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "opened",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-01 #black",
+            "The door can be opened #green"
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "closed",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-02 #black",
+            "The door can be closed #green"
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 42278
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed while locked #red"
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12456
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 38223
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-06 #black",
+            "the door cannot be unlocked with an invalid passcode #red"
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 1) #orange"
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-04 #black",
+            "SECLOC-03 #black",
+            "The door can be unlocked with a correct passcode #green"
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7629
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 1) #orange"
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1450
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 2) #orange"
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24097
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-06 #black",
+            "the door cannot be unlocked with an invalid passcode #red"
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25260
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-06 #black",
+            "the door cannot be unlocked with an invalid passcode #red"
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2746
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 3) #orange"
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "shut_off",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-07 #black",
+            "The door shuts off after three unlock attempts with incorrect passcode #orange"
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23504
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28937
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "opened",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-01 #black",
+            "The door can be opened #green"
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 21393
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be unlocked while opened #red"
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "closed",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-02 #black",
+            "The door can be closed #green"
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23961
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 22830
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3636
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 1) #orange"
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 16334
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed while locked #red"
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 79
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 2) #orange"
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed while locked #red"
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32134
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 39160
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-06 #black",
+            "the door cannot be unlocked with an invalid passcode #red"
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32527
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 9244
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3636
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-04 #black",
+            "SECLOC-03 #black",
+            "The door can be unlocked with a correct passcode #green"
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3640
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 1) #orange"
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 38651
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-06 #black",
+            "the door cannot be unlocked with an invalid passcode #red"
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1541
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 2) #orange"
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 3640
+          }
+        },
+        {
+          "label": {
+            "name": "unlocked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-04 #black",
+            "SECLOC-03 #black",
+            "The door can be unlocked with a correct passcode #green"
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 23475
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1255
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be opened while locked #red"
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 42001
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 101,
+          "state_vector_size": null,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    },
+    {
+      "description": "",
+      "verdict": "passed",
+      "steps": [
+        {
+          "label": {
+            "name": "tick",
+            "direction": "unobservable",
+            "channel": null
+          },
+          "notes": [
+
+          ],
+          "step_number": 1,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 2,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 19083
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 3,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 4,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 27014
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-02 #black",
+            "SECLOC-04 #black",
+            "the door cannot be locked with an invalid passcode #red"
+          ],
+          "step_number": 5,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 6,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed again while closed #red"
+          ],
+          "step_number": 7,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 8,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 9,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 10,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2560
+          }
+        },
+        {
+          "label": {
+            "name": "locked",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-08 #black",
+            "BEHAVR-03 #black",
+            "The door can be locked #green"
+          ],
+          "step_number": 11,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 12,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 0
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 1) #orange"
+          ],
+          "step_number": 13,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 14,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed while locked #red"
+          ],
+          "step_number": 15,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 16,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 17,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 18,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be closed while locked #red"
+          ],
+          "step_number": 19,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 20,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 623
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 2) #orange"
+          ],
+          "step_number": 21,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 22,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12147
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "BEHAVR-05 #black",
+            "the door cannot be locked again while locked #red"
+          ],
+          "step_number": 23,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 24,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 25,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 26,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "DIALOG-09 #black",
+            "DIALOG-10 #black",
+            "#unknown command"
+          ],
+          "step_number": 27,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 28,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 975
+          }
+        },
+        {
+          "label": {
+            "name": "incorrect_passcode",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-03 #black",
+            "SECLOC-05 #black",
+            "The door cannot be unlocked with an incorrect passcode (attempt 3) #orange"
+          ],
+          "step_number": 29,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "shut_off",
+            "direction": "response",
+            "channel": "door"
+          },
+          "notes": [
+            "SECLOC-07 #black",
+            "The door shuts off after three unlock attempts with incorrect passcode #orange"
+          ],
+          "step_number": 30,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 31,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25879
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 32,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 33,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 34,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 20947
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 35,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 13744
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 36,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 37,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 6859
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 38,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2654
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 39,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 40,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 41,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26783
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 42,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 43,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 44,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 18405
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 45,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30477
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 46,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 47,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 48,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 49,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 50,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 20252
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 51,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 1061
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 52,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 53,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32110
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 54,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 55,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30926
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 56,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32089
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 57,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24896
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 58,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 59,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 60,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26354
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 61,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 62,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 13703
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 63,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 64,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 65,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 66,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 67,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 68,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 69,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 70,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 12383
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 71,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 29190
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 72,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28251
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 73,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 32754
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 74,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 75,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 76,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 77,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 78,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 79,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 80,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 81,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 25782
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 82,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 83,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 28115
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 84,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 26323
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 85,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 30726
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 86,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 87,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2088
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 88,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "invalid_command",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 89,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 90,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 91,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 92,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 93,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 24894
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 94,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 7361
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 95,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "lock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 96,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 6910
+          }
+        },
+        {
+          "label": {
+            "name": "open",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 97,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 98,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "close",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 99,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+          }
+        },
+        {
+          "label": {
+            "name": "unlock",
+            "direction": "stimulus",
+            "channel": "door"
+          },
+          "notes": [
+
+          ],
+          "step_number": 100,
+          "state_vector_size": 1,
+          "physical_label": null,
+          "label_parameters": {
+            "passcode": 2493
+          }
+        }
+      ],
+      "last_step": 99,
+      "expected_labels": [
+
+      ],
+      "tags": [
+
+      ]
+    }
+  ]
+}
