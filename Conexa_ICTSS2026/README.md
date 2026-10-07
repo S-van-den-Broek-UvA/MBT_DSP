@@ -1,6 +1,6 @@
 This repository contains figures and raw data related to the ICTSS2026 paper "Conexa: Online Conformance and Exhibition-Driven Model-Based Testing".
 
-For the preprint version of the paper, [Conexa preprint pdf](https://github.com/S-van-den-Broek-UvA/MBT_DSP/blob/master/Conexa_ICTSS2026/Conexa%20preprint%20[contains%20minor%20mistakes%20in%20examples%3B%20will%20be%20fixed%20in%20Springer%20version].pdf). Note that this preprint version contains two minor mistakes in examples/figures, which will be fixed in the official print version by Springer. These changes do not influence the results presented in the paper in any way.
+For the preprint version of the paper, [Conexa preprint pdf](https://github.com/S-van-den-Broek-UvA/MBT_DSP/blob/62301b00e802a141562ee8a83921632144abb4bf/Conexa_ICTSS2026/Conexa%20preprint%20%5Bcontains%20minor%20mistakes%20in%20examples%3B%20will%20be%20fixed%20in%20Springer%20version%5D.pdf). Note that this preprint version contains two minor mistakes in examples/figures, which will be fixed in the official print version by Springer. These changes do not influence the results presented in the paper in any way.
 
 Repository contents:
 - STS model of the SmartDoor SUT
